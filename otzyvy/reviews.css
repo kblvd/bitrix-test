@@ -1,0 +1,43 @@
+.review {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.review span {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.review p {
+  margin-bottom: 0;
+}
+
+.stars {
+  display: flex;
+  gap: 5px; 
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc; 
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.star.filled {
+  background-color: #ffd700; 
+}
