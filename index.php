@@ -159,4 +159,13 @@ $trendFilter = array('PROPERTY_TREND' => '4');
 	),
 	false
 ); ?>
+
+<? $APPLICATION->IncludeComponent(
+	"dmn:reviews",
+	"",
+	[
+		"SHOW_TEXT" => "N" // Не показываем текст отзыва
+	]
+); ?>
+
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
